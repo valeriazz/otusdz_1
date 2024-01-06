@@ -64,6 +64,7 @@ public class Main {
                     }
 
                     animalList.add(animal);
+                    animal.say();
                     break;
 
                 case LIST:
