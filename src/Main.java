@@ -1,4 +1,6 @@
 import animals.Animal;
+import animals.birds.Duck;
+import animals.birds.IFly;
 import data.AnimalData;
 import data.CommandsData;
 import factory.AnimalFactory;
@@ -65,6 +67,9 @@ public class Main {
 
                     animalList.add(animal);
                     animal.say();
+                    if(animal instanceof IFly) {
+                        ((IFly)animal).fly();
+                    }
                     break;
 
                 case LIST:
